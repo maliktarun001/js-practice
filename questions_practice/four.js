@@ -31,3 +31,30 @@ console.log(mySeventhArray.indexOf(3));
 // 7. check if a value exists in an array using .includes().
 var myEightArray = [1, 2, 3, 4, 5, 6];
 console.log(myEightArray.includes(2));
+
+// 8. combine two arrays [1, 2] and [3,4] using .concat().
+var myFirstArray = [1, 2, 3, 4, 5, 6];
+var myNextArray = [7, 8, 9, 10];
+console.log(myFifthArray.concat(myNextArray));
+
+// 9. Sort an array of numbers [5, 2, 9, 1] in ascending order.
+var arr = [11, 24, 36, 4, 5];
+for (var j = 0; j < arr.length; j++) {
+  for (var i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      var temp = arr[i];
+      arr[i] = arr[i + 1];
+      arr[i + 1] = temp;
+    }
+  }
+}
+console.log(arr);
+
+// 10. Write a program that creates a copy of an array without mutating the original.
+var arr1 = [11, 24, 36, 4, 5];
+var arr2 = [];
+arr.forEach(function (value) {
+  arr2.push(value);
+});
+arr2.pop();
+console.log(arr, arr2);
